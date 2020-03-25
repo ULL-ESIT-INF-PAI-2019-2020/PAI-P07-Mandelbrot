@@ -10,7 +10,7 @@ Los objetivos de esta práctica son:
 * Practicar el proceso de pruebas de software (testing) utilizando Mocha y Chai.
 
 El [conjunto de Mandelbrot](https://en.wikipedia.org/wiki/Mandelbrot_set) 
-El conjunto de Mandelbrot es el conjunto de números resultantes de repetidas iteraciones de la siguiente expresión:
+es el conjunto de números resultantes de repetidas iteraciones de la siguiente expresión:
 
 `z = z^2 + c`   [1] 
 
