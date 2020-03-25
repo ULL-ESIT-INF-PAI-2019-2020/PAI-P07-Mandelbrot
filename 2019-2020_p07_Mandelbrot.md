@@ -70,7 +70,7 @@ El algoritmo que se propone se describe a continuación:
  - Si se cumple la condición del umbral, entonces deje de iterar y pase al siguiente punto.
 3. Una vez que todos los puntos han sido categorizados como dentro o fuera del conjunto, el área estimada y el error es dado por:
 
-`Àrea = 2 * 2.5 * 1.125 * N<sub>dentro</sub>/ N`
+> Àrea = 2 * 2.5 * 1.125 * N<sub>dentro</sub>/ N
 
 `Error = Área / sqrt(N)`
 
