@@ -41,30 +41,29 @@ Diseñe asimismo otra página HTML simple
 [4] `http://10.6.129.123:8080/index.html`
 
 que sirva de "página índice" para los ejercicios de la sesión de evaluación de la práctica.
-La página [3] será uno de los enlaces de [4].
+La página [3] será uno de los enlaces de [4] y a su vez [3] tendrá un enlace "Home" que apunte a [4].
 
 El cálculo del área del conjunto de Mandelbrot es un problema no trivial, ya que los resultados teóricos y 
 numéricos obtenidos para este cálculo no concuerdan. 
 Se propone usar el muestreo de Monte Carlo para calcular una solución numérica a este problema.
 El método de Monte Carlo que que se propone implica la generación de un gran número de puntos 
 aleatorios en el rango `[(-2.0, 0), (0.5, 1.125)]` del plano complejo. 
-Luego cada punto será iterado usando la ecuación sobre un número finito de veces (digamos hasta 10000). 
+Cada punto será iterado usando la ecuación [1] hasta un determinado límite (digamos hasta 10000). 
 Si dentro de ese número de iteraciones se cumple la condición de umbral, entonces ese punto se considera 
-fuera del Conjunto de Mandelbrot. 
+fuera (no perteneciente) del Conjunto de Mandelbrot. 
 Al contabilizar el número de puntos aleatorios dentro del conjunto y los que están fuera, se obtiene
 una buena aproximación del área del conjunto.
-
 El algoritmo que se propone se describe a continuación:
 
-1. Se genera un conjunto de `N`números complejos aleatorios en el rango `[(-2,0, 0), (0,5, 1,125)]`.
+1. Se genera un conjunto de `N`números complejos aleatorios en el intervalo `[(-2.0, 0), (0.5, 1.125)]`.
 2. Realizar el muestreo de Monte Carlo iterando sobre los `N`puntos.  Para cada punto:
-* Asignar z = c[i]
-* Iterar como se define en la ecuación [1], probando la condición umbral [2] en cada iteración:
-- Si no se cumple la condición del umbral, es decir, `|z| <= 2`, entonces repetir la iteración 
+..* Asignar z = c[i]
+..* Iterar según la ecuación [1], probando la condición umbral [2] en cada iteración:
+..* Si no se cumple la condición del umbral, es decir, `|z| <= 2`, entonces repetir la iteración 
   (hasta un número máximo de iteraciones, digamos 10000). 
 	Si después del número máximo de iteraciones la condición sigue sin satisfacerse, entonces 
 	añada uno al número total de puntos dentro del conjunto.
-- Si se cumple la condición del umbral, entonces deje de iterar y pase al siguiente punto.
+..* Si se cumple la condición del umbral, entonces deje de iterar y pase al siguiente punto.
 3. Una vez que todos los puntos han sido categorizados como dentro o fuera del conjunto, el área estimada y el error es dado por:
 
 `Àrea = 2 * 2.5 * 1.125 * N<sub>dentro</sub>/ N`
