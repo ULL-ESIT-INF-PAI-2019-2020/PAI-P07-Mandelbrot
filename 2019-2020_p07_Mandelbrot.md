@@ -84,6 +84,9 @@ Puede consultar
 [esta referncia](https://www.codingame.com/playgrounds/2358/how-to-plot-the-mandelbrot-set/adding-some-colors) 
 (código en Python) a modo de ejemplo.
 
+Pueden idearse estrategias para que la visualización del conjunto resulte fluída.
+Un factor importante para conseguir fluidez es la optimización del código, puesto que se trata de una aplicación intensiva en cómputo.
+
 Las siguientes deben tomarse como especificaciones de la aplicación a desarrollar:
 
 * Todo el código estará ubicado en el directorio `src` del proyecto a desarrollar.
