@@ -10,7 +10,7 @@ Los objetivos de esta práctica son:
 * Practicar el proceso de pruebas de software (testing) utilizando Mocha y Chai.
 
 El [conjunto de Mandelbrot](https://en.wikipedia.org/wiki/Mandelbrot_set) 
-El conjunto de Mandelbrot es el conjunto de números resultantes de repetidas iteraciones de la siguiente función:
+El conjunto de Mandelbrot es el conjunto de números resultantes de repetidas iteraciones de la siguiente expresión:
 
 `z = z^2 + c`   [1] 
 
@@ -24,15 +24,12 @@ Si, dentro de un número finito de iteraciones, se cumple la condición anterior
 considera que el punto `c` está fuera del conjunto de Mandelbrot.
 Como sabemos, un número complejo `c` puede representarse como un punto en un espacio bidimensional.
 
-Se propone escribir un programa `mandelbrot.js` que:
-
-* Representar gráficamente el Conjunto. 
-* Calcule el área del Conjunto de Mandelbrot 
+Se propone escribir un programa `mandelbrot.js` que represente gráficamente el Conjunto y calcule su área. 
 
 La visualización de la ejecución del programa se realizará a través de una página web alojada
 en la máquina IaaS-ULL de la asignatura y cuya URL tendrá la forma:
 
-[3] `http://10.6.129.123:8080/einstein-albert-mandelbrot.html'
+[3] ```http://10.6.129.123:8080/einstein-albert-mandelbrot.html
 
 en la que se incustará un canvas para dibujar el conjunto.
 El valor del área y el error de la misma se imprimirán asimismo gráficamente dentro del canvas.
