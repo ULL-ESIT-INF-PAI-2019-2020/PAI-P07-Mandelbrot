@@ -24,7 +24,7 @@ Si, dentro de un número finito de iteraciones, se cumple la condición anterior
 considera que el punto `c` está fuera del conjunto de Mandelbrot.
 Como sabemos, un número complejo `c` puede representarse como un punto en un espacio bidimensional.
 
-Se propone escribir un programa `mandelbrot.js` que represente gráficamente el Conjunto y calcule su área. 
+Se propone desarrollar un proyecto JavaScript cuyo núcleo será un programa `mandelbrot.js` que represente gráficamente el Conjunto y calcule su área. 
 
 La visualización de la ejecución del programa se realizará a través de una página web alojada
 en la máquina IaaS-ULL de la asignatura y cuya URL tendrá la forma:
