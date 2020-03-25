@@ -58,7 +58,7 @@ El algoritmo que se propone se describe a continuación:
 1. Se genera un conjunto de `N`números complejos aleatorios en el intervalo `[(-2.0, 0), (0.5, 1.125)]`.
 2. Realizar el muestreo de Monte Carlo iterando sobre los `N`puntos.  Para cada punto:
 
- - Asignar z = c[i]
+ - Asignar `z = c[i]`
 
  - Iterar según la ecuación [1], probando la condición umbral [2] en cada iteración:
 
@@ -70,7 +70,7 @@ El algoritmo que se propone se describe a continuación:
  - Si se cumple la condición del umbral, entonces deje de iterar y pase al siguiente punto.
 3. Una vez que todos los puntos han sido categorizados como dentro o fuera del conjunto, el área estimada y el error es dado por:
 
-> Àrea = 2 * 2.5 * 1.125 * N<sub>dentro</sub>/ N
+> Àrea = 2 * 2.5 * 1.125 * N<sub>dentro</sub> / N
 
 > Error = Área / sqrt(N)
 
