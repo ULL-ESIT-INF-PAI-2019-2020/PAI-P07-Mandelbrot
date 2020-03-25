@@ -29,7 +29,8 @@ Se propone escribir un programa `mandelbrot.js` que represente gráficamente el 
 La visualización de la ejecución del programa se realizará a través de una página web alojada
 en la máquina IaaS-ULL de la asignatura y cuya URL tendrá la forma:
 
-[3] ```http://10.6.129.123:8080/einstein-albert-mandelbrot.html
+[3] 
+```http://10.6.129.123:8080/einstein-albert-mandelbrot.html
 
 en la que se incustará un canvas para dibujar el conjunto.
 El valor del área y el error de la misma se imprimirán asimismo gráficamente dentro del canvas.
