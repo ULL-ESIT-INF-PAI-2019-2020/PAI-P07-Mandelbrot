@@ -71,6 +71,7 @@ El algoritmo que se propone se describe a continuación:
 3. Una vez que todos los puntos han sido categorizados como dentro o fuera del conjunto, el área estimada y el error es dado por:
 
 > Àrea = 2 * 2.5 * 1.125 * N<sub>dentro</sub>/ N
+
 > Error = Área / sqrt(N)
 
 Escriba el código para calcular el área y su error.
